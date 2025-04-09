@@ -1,17 +1,34 @@
 
-.navbar {
-    background-color: olivedrab;
-    overflow: hidden;
+* {
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
   }
   
-  .navbar  a {
+.grid-container {
+    display: grid;
+    grid-template-areas:  
+      'navbar navbar navbar navbar navbar navbar'
+      'left left middle middle right right' 
+      'wide wide wide wide wide wide'
+      'footer footer footer footer footer footer';
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.navbar {
+    background-color: olivedrab;
+    /*overflow: hidden;*/
+    grid-area: navbar;
+  }
+  
+.navbar  a {
     float: inline-end;
+    display: block;
     color: pink;
     text-align: center;
     padding: 15px;
     text-decoration: none;
     font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
   }
   
   .navbar a:hover {
@@ -22,4 +39,60 @@
     background-color: olivedrab;
     color: maroon;
     text-decoration: underline;
+  }
+
+  .left {
+    border-radius: 10px;
+    grid-area: left;
+    background-color: olive;;
+    padding: 10px;
+    height: 250px;
+  }
+
+  .middle {
+    border-radius: 10px;
+    grid-area: middle;
+    background-color: paleturquoise;
+    padding: 10px;
+    height: 250px;
+  }
+
+  .right {
+    border-radius: 10px;
+    grid-area: right;
+    background-color: pink;
+    padding: 10px;
+    height: 250px;
+  }
+  
+  .wide {
+    border-radius: 10px;
+    grid-area: wide;
+    background-color:grey;
+    padding: 10px;
+    height: 250px;
+    text-align: left;
+    font-size: 20px;
+  }
+   
+  .footer {
+    grid-area: footer;
+    background-color: olivedrab;
+    color:pink;
+    text-align: left;
+    font-size: 15px;
+    padding: 10px;
+    height: 60px;
+  }
+
+  @media (max-width: 680px) {
+    .grid-container  {
+      grid-template-areas: 
+        'navbar navbar navbar navbar navbar navbar' 
+        'left left left left left left' 
+        'middle middle middle middle middle middle' 
+        'right right right right right right' 
+        'wide wide wide wide wide wide'
+        'footer footer footer footer footer footer';
+    }
   }
