@@ -1,0 +1,25 @@
+
+.navbar {
+    background-color: olivedrab;
+    overflow: hidden;
+  }
+  
+  .navbar  a {
+    float: inline-end;
+    color: pink;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+  }
+  
+  .navbar a:hover {
+    background-color: olivedrab;
+    color: maroon;
+  }
+  .navbar a.active {
+    background-color: olivedrab;
+    color: maroon;
+    text-decoration: underline;
+  }
