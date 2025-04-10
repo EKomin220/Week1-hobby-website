@@ -17,8 +17,8 @@
 
 .navbar {
     background-color: olivedrab;
-    /*overflow: hidden;*/
     grid-area: navbar;
+    height: 60px;
   }
   
 .navbar  a {
@@ -44,33 +44,52 @@
   .left {
     border-radius: 10px;
     grid-area: left;
-    background-color: olive;;
-    padding: 10px;
-    height: 250px;
+    background-color: rgb(177, 177, 88);
+    padding: 20px;
+    height: 300px;
+    object-fit: scale-down;
+    text-align:left;
+    font-size: 14px;
+    display:flex;
+    justify-content: center;
   }
 
   .middle {
     border-radius: 10px;
     grid-area: middle;
     background-color: paleturquoise;
-    padding: 10px;
-    height: 250px;
+    padding: 20px;
+    height: 300px;
+    object-fit: scale-down;
+    text-align:center;
+    font-size: 14px;
+    display:flex;
+    justify-content: center;
   }
 
   .right {
     border-radius: 10px;
     grid-area: right;
     background-color: pink;
+    height: 300px;
+    object-fit: scale-down;
+    text-align:left;
+    font-size: 14px;
+    display:flex;
+    justify-content: center;
     padding: 10px;
-    height: 250px;
+  }
+
+  #picture {
+    padding: 20px;
   }
   
   .wide {
     border-radius: 10px;
     grid-area: wide;
-    background-color:grey;
+    background-color:rgb(221, 184, 184);
     padding: 10px;
-    height: 250px;
+    height: 400px;
     text-align: left;
     font-size: 20px;
   }
@@ -79,13 +98,13 @@
     grid-area: footer;
     background-color: olivedrab;
     color:pink;
-    text-align: left;
-    font-size: 15px;
+    text-align: center;
+    font-size: 16px;
     padding: 10px;
     height: 60px;
   }
 
-  @media (max-width: 680px) {
+  @media (max-width: 768px) {
     .grid-container  {
       grid-template-areas: 
         'navbar navbar navbar navbar navbar navbar' 
@@ -96,3 +115,21 @@
         'footer footer footer footer footer footer';
     }
   }
+
+ .picture { 
+  max-height: 290px;
+  width: auto;
+  border-radius:10px;
+  position:relative;
+ }
+
+ h1{
+  font-size: 40px;
+  color: black;
+  text-align: center;
+  padding: 10px;
+}
+
+.link{
+  color: purple;
+}
