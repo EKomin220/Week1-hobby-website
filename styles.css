@@ -89,7 +89,8 @@
     grid-area: wide;
     background-color:rgb(221, 184, 184);
     padding: 10px;
-    height: 400px;
+    height: auto;
+    object-fit: scale-down;
     text-align: left;
     font-size: 20px;
   }
